@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -118,6 +118,9 @@
 		041397C92560179200DAE51F /* PokeApiTest */ = {
 			isa = PBXGroup;
 			children = (
+				0413980F256037B700DAE51F /* Models */,
+				0413980E256037AC00DAE51F /* Views */,
+				0413980D2560379300DAE51F /* Controllers */,
 				041397CA2560179200DAE51F /* AppDelegate.swift */,
 				041397CC2560179200DAE51F /* SceneDelegate.swift */,
 				041397CE2560179200DAE51F /* ViewController.swift */,
@@ -148,6 +151,67 @@
 			path = PokeApiTestUITests;
 			sourceTree = "<group>";
 		};
+		0413980D2560379300DAE51F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0413980E256037AC00DAE51F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041398142560381900DAE51F /* DataCells */,
+				04139813256037E900DAE51F /* Animations */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0413980F256037B700DAE51F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04139812256037D500DAE51F /* Protocols */,
+				04139811256037CA00DAE51F /* WebServices */,
+				04139810256037BF00DAE51F /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04139810256037BF00DAE51F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		04139811256037CA00DAE51F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		04139812256037D500DAE51F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04139813256037E900DAE51F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		041398142560381900DAE51F /* DataCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataCells;
+			sourceTree = "<group>";
+		};
 		49ABBFB050CB73BE4C3435AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +232,6 @@
 				C8D029231A9B5B344AEBC011 /* Pods-PokeApiTestTests.debug.xcconfig */,
 				3E16739A5946A2C385112AA1 /* Pods-PokeApiTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
