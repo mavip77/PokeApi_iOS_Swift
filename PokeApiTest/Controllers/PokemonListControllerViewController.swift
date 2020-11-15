@@ -11,14 +11,43 @@ class PokemonListControllerViewController: UIViewController {
 
   @IBOutlet weak var tableView:UITableView!
 
-  let ApiConnection = PokeApiConnect()
+ 
+  var pokemonSelected : Pokemon?
+
+  //For DataSource
+  private lazy var listDataSource:PokemonListDataSource = {
+
+    return DataSourceForGetPokemonsQuery()
+
+  }()
+
+
+  func DataSourceForGetPokemonsQuery() -> PokemonListDataSource {
+
+    return PokemonListDataSource(query: ""){
+
+      [unowned self] in
+
+      self.tableView.reloadData()
+    }
+
+
+  }
+
+
+  //MARK:- LIFE CICLE APP
+
+  override func viewWillAppear(_ animated: Bool) {
+    self.listDataSource.FetchNext()
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
       self.tableView.delegate = self
+      self.tableView.dataSource = self.listDataSource
 
-      ApiConnection.GetPokemons()
+
 
         // Do any additional setup after loading the view.
     }

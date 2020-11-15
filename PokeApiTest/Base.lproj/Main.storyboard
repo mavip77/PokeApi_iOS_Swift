@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonList_RI" id="FEg-N3-iVA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonList_RI" id="FEg-N3-iVA" customClass="PokemonTableViewCell" customModule="PokeApiTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FEg-N3-iVA" id="mjo-ny-2OE">
@@ -127,8 +127,16 @@
                                                 <constraint firstItem="cgf-xR-ecL" firstAttribute="top" secondItem="mjo-ny-2OE" secondAttribute="top" id="NOk-HG-Fsk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="PokemonId" destination="gfY-ne-0re" id="Ve3-lY-XvD"/>
+                                            <outlet property="PokemonName" destination="57i-59-FdH" id="PLw-5v-5e1"/>
+                                            <outlet property="pokemonImage" destination="ONp-TB-eK7" id="ilE-Tv-zrv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jmg-sh-PsY"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

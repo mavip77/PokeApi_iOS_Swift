@@ -8,6 +8,7 @@ target 'PokeApiTest' do
   # Pods for PokeApiTest
 
     pod 'Alamofire', '~> 5.2'
+    pod 'AlamofireImage', '~> 4.1'
 
   target 'PokeApiTestTests' do
     inherit! :search_paths

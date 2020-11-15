@@ -6,8 +6,19 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class PokemonTableViewCell: UITableViewCell {
+
+
+  @IBOutlet weak var pokemonImage: UIImageView!
+
+
+  @IBOutlet weak var PokemonName: UILabel!
+
+
+  @IBOutlet weak var PokemonId: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +32,28 @@ class PokemonTableViewCell: UITableViewCell {
     }
 
   public func Populate(pokemon:Pokemon){
-    
+
+    let PokemonIdInPokeApi = self.getIdPokemonInPokeApi(url: pokemon.url)
+
+    let urlImage = ConstantansApp.URL_POKEMON_IMAGE_BASE + "\(PokemonIdInPokeApi)" + ConstantansApp.POSTFIX_POKEMON_IMAGE_URL
+    self.pokemonImage.af.setImage(withURL: URL(string: urlImage)!)
+    self.PokemonName.text = pokemon.name
+
+    self.PokemonId.text = "\(PokemonIdInPokeApi)"
+
+  }
+
+  func getIdPokemonInPokeApi(url:String) -> String{
+
+    let StringActions = StringOperations()
+    return StringActions.GetPokemonNumber(urlDataAsString: url)
+
+  }
+
+  override func prepareForReuse() {
+    super.prepareForReuse()
+
+    self.pokemonImage.af.cancelImageRequest()
   }
 
 }

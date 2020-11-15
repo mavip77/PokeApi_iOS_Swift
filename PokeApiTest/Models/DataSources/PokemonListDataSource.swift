@@ -9,16 +9,22 @@ import UIKit
 
 class PokemonListDataSource: NSObject {
 
+  ///Delegate For Notifie api response
+  weak var delegateApiActions: PokeApiGetPokemonsResponseActionsDelegate?
+
+  ///Var For ApiService Call
+  let ApiService = PokeApiConnect()
+
   /// Var for define pokemons quantity retrieved in a get pokemons query
   let numberOfPokemosRetrieved: Int16 = 25
 
-  let arrayWithPokemons:[Pokemon] = []
+  var arrayWithPokemons:[Pokemon] = []
 
   ///Constante for update user gesture scroll down
-  let updateManager: () -> ()
+  var updateManager: () -> ()
 
   /// Var For Save WebService Query
-  let query:String?
+  var query:String?
 
   /// Flag for fetch Updates
   var isFetchingUpdates = false
@@ -28,7 +34,11 @@ class PokemonListDataSource: NSObject {
     return arrayWithPokemons.count
   }
 
-  public init(query:String, updateManager: @escaping () -> ()){
+
+
+
+ public init(query:String, updateManager: @escaping () -> ()){
+
 
     self.query = query
     self.updateManager = updateManager
@@ -37,12 +47,12 @@ class PokemonListDataSource: NSObject {
 
   /// Fetch The next POkemons Array
   public func FetchNext(){
-
+    self.ApiService.actionsResponseDelegate = self
     // Get Data From WebService
-    let _Pokemons =
+    self.ApiService.GetPokemons()
 
-    // Update Manager here
-      self.updateManager()
+
+
     /*
     if isFetchingUpdates{
       return
@@ -56,6 +66,32 @@ class PokemonListDataSource: NSObject {
 
 
 }
+
+extension PokemonListDataSource:PokeApiGetPokemonsResponseActionsDelegate{
+
+
+  func QueryResultData(pokemons: [Pokemon]?) {
+
+    if let pokemons = pokemons{
+
+      self.arrayWithPokemons = pokemons
+      // Update Manager here
+        self.updateManager()
+    }
+
+  }
+
+  func QueryResultError(message: String) {
+
+    self.arrayWithPokemons = [Pokemon]()
+    
+  }
+
+
+
+
+}
+
 
 
 //MARK:- Table View
@@ -71,7 +107,7 @@ extension PokemonListDataSource: UITableViewDataSource{
 
       let pokemon = arrayWithPokemons[indexPath.row]
 
-    cell.Populate(pokemon : pokemon)
+      cell.Populate(pokemon : pokemon)
 
       return cell
 

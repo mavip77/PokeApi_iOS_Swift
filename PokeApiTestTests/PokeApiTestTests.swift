@@ -30,4 +30,15 @@ class PokeApiTestTests: XCTestCase {
         }
     }
 
+  func testShouldReturnPokemonNumber() throws {
+
+
+    let StringUtils = StringOperations()
+    assert(StringUtils.GetPokemonNumber(urlDataAsString: "https://pokeapi.co/api/v2/pokemon/3/") == "3")
+    assert(StringUtils.GetPokemonNumber(urlDataAsString: "https://pokeapi.co/api/v2/pokemon/19/") == "19")
+    assert(StringUtils.GetPokemonNumber(urlDataAsString: "https://pokeapi.co/api/v2/pokemon/1009/") == "1009")
+
+
+  }
+
 }
