@@ -34,6 +34,8 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
 
       if let values = response.value{
 
+        // Send Message for Modify last and previos query var in datasource
+        self.actionsResponseDelegate?.NextAndPreviosQueriesResult(previousQuery:values.previous , nextQuery: values.next)
         self.actionsResponseDelegate?.QueryResultData(pokemons: values.results)
       }
 

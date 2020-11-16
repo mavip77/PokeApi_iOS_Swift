@@ -12,5 +12,6 @@ protocol PokeApiGetPokemonsResponseActionsDelegate: class {
 
   func QueryResultData(pokemons:[Pokemon]?) -> Void
   func QueryResultError(message:String) -> Void
+  func NextAndPreviosQueriesResult(previousQuery:String?, nextQuery:String?) -> Void
 
 }
