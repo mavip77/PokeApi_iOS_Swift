@@ -23,6 +23,13 @@ class PokemonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
+        selectedBackgroundView = {
+              let view = UIView.init()
+          view.backgroundColor = .cyan
+              return view
+
+    }()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,15 +38,26 @@ class PokemonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-  public func Populate(pokemon:Pokemon){
+  public func Populate(pokemon:Pokemon?){
 
-    let PokemonIdInPokeApi = self.getIdPokemonInPokeApi(url: pokemon.url)
 
-    let urlImage = ConstantansApp.URL_POKEMON_IMAGE_BASE + "\(PokemonIdInPokeApi)" + ConstantansApp.POSTFIX_POKEMON_IMAGE_URL
-    self.pokemonImage.af.setImage(withURL: URL(string: urlImage)!)
-    self.PokemonName.text = pokemon.name
+    if let pokemon = pokemon{
 
-    self.PokemonId.text = "\(PokemonIdInPokeApi)"
+
+      let urlImage = ConstantansApp.URL_POKEMON_IMAGE_BASE + "\(pokemon.id!)" + ConstantansApp.POSTFIX_POKEMON_IMAGE_URL
+      self.pokemonImage.af.setImage(withURL: URL(string: urlImage)!)
+      self.PokemonName.text = pokemon.name
+
+      let index = Int(pokemon.id!)
+
+      let indexAsString = "#" + String(format: "%04d", index as! CVarArg)
+
+      self.PokemonId.text = indexAsString
+
+      
+    }
+
+
 
   }
 

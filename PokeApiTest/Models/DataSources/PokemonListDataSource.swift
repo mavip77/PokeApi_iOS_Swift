@@ -20,6 +20,8 @@ class PokemonListDataSource: NSObject {
 
   var arrayWithPokemons:[Pokemon] = []
 
+  var pokemon:Pokemon?
+
   ///Constante for update user gesture scroll down
   var updateManager: () -> ()
 
@@ -105,7 +107,11 @@ extension PokemonListDataSource: UITableViewDataSource{
 
       let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonList_RI") as! PokemonTableViewCell
 
-      let pokemon = arrayWithPokemons[indexPath.row]
+    //Set Id For a Pokemon
+    arrayWithPokemons[indexPath.row].id = setIdToPokemons(url: arrayWithPokemons[indexPath.row].url)
+
+       pokemon = arrayWithPokemons[indexPath.row]
+
 
       cell.Populate(pokemon : pokemon)
 
@@ -113,4 +119,14 @@ extension PokemonListDataSource: UITableViewDataSource{
 
   }
 
+}
+
+extension PokemonListDataSource{
+
+  func setIdToPokemons(url:String) -> String {
+
+    let stringActions = StringOperations()
+    return stringActions.GetPokemonNumber(urlDataAsString: url)
+
+  }
 }

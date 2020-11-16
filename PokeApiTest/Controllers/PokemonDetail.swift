@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PokemonDetail: UIViewController {
 
@@ -15,16 +16,45 @@ class PokemonDetail: UIViewController {
 
   @IBOutlet weak var titleLabel: UILabel!
 
+
+  @IBOutlet weak var pokemonImage: UIImageView!
+
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      self.titleLabel.text = String_For_test
-
-      self.title = pokemonSelected?.name
-
       print(pokemonSelected)
+
+      populateData(pokemonSelected: self.pokemonSelected)
+
+
         // Do any additional setup after loading the view.
     }
+
+  func populateData(pokemonSelected:Pokemon?){
+
+    //Set URL to Image
+
+    if let pokemonIndex = pokemonSelected?.id{
+
+      let pokemonImageURL = ConstantansApp.URL_POKEMON_IMAGE_BASE + "\(pokemonIndex)" + ConstantansApp.POSTFIX_POKEMON_IMAGE_URL
+      self.pokemonImage.af.setImage(withURL: URL(string: pokemonImageURL)!)
+
+    }
+
+
+    self.titleLabel.text = pokemonSelected?.name
+
+    self.title = pokemonSelected?.name
+
+
+
+  }
+
+
+
     
 
     /*
