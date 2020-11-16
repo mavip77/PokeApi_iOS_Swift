@@ -12,32 +12,39 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
  
 
 
-  let URL_FOR_BASIC_QUERY = ConstantansApp.URL_BASE + ConstantansApp.URL_BASE_BASIC_QUERY_POSTFIX
+  let URL_FOR_BASIC_QUERY = ConstantansApp.URL_BASE + ConstantansApp.URL_ENDPOINT_BASIC_QUERY_POSTFIX
 
    var actionsResponseDelegate:PokeApiGetPokemonsResponseActionsDelegate?
 
 
-  func GetPokemons() -> Void {
+  func GetPokemons(queryAsString:String?) -> Void {
 
     var pokemons : [Pokemon]? = []
 
-    let request = AF.request(self.URL_FOR_BASIC_QUERY, method: .get, parameters: nil, encoding:URLEncoding(destination: .methodDependent), headers: nil, interceptor: nil, requestModifier: nil)
-      .validate(statusCode: 200..<300)
-      .validate(contentType: ["application/json"])
+    if let query = queryAsString{
+
+      let request = AF.request(query, method: .get, parameters: nil, encoding:URLEncoding(destination: .methodDependent), headers: nil, interceptor: nil, requestModifier: nil)
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
 
 
-     //works right
-    request.responseDecodable(of:ApiResponse.self){
-      response in
+       //works right
+      request.responseDecodable(of:ApiResponse.self){
+        response in
 
-      print("Response \(response)")
+        print("Response \(response)")
 
-      if let values = response.value{
+        if let values = response.value{
 
-        self.actionsResponseDelegate?.QueryResultData(pokemons: values.results)
+          // Send Message for Modify last and previos query var in datasource
+          self.actionsResponseDelegate?.NextAndPreviosQueriesResult(previousQuery:values.previous , nextQuery: values.next)
+          self.actionsResponseDelegate?.QueryResultData(pokemons: values.results)
+        }
+
       }
-
     }
+
+
 
 /*
     request.responseData{

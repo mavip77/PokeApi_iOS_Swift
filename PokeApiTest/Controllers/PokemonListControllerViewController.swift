@@ -100,3 +100,20 @@ class PokemonListControllerViewController: UIViewController {
 extension PokemonListControllerViewController : UITableViewDelegate{
 
 }
+
+extension PokemonListControllerViewController : UIScrollViewDelegate{
+
+
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    // Load more restaurants if the user is 100 points away from scrolling to the bottom.
+    let height = scrollView.frame.size.height + 100
+    let contentYoffset = scrollView.contentOffset.y
+    let distanceFromBottom = scrollView.contentSize.height - contentYoffset
+    if distanceFromBottom < height {
+      print("Load Next POkemons")
+      self.listDataSource.FetchNext()
+    }
+
+  }
+
+}
