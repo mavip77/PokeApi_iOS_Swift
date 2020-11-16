@@ -52,9 +52,26 @@ class PokemonListDataSource: NSObject {
 
   /// Fetch The next POkemons Array
   public func FetchNext(){
-    self.ApiService.actionsResponseDelegate = self
-    // Get Data From WebService
-    self.ApiService.GetPokemons()
+
+    if isFetchingUpdates{
+
+      return
+    }
+
+    isFetchingUpdates = true
+
+    // Review if Next Query 1= nil then realize query
+    if let query = self.nextQuery{
+
+      self.ApiService.actionsResponseDelegate = self
+      // Get Data From WebService
+      self.ApiService.GetPokemons(queryAsString: self.nextQuery) // Change query Firm added Query String
+
+    }else{
+      return
+    }
+
+
 
 
 
@@ -69,26 +86,56 @@ class PokemonListDataSource: NSObject {
 
   }
 
+  func UpdateQueries(nextQuery:String?, previousQuery:String?){
+
+    self.lastQuery = previousQuery
+    self.nextQuery = nextQuery
+
+  }
+
+  func UpdatePokemonsArray(pokemons:[Pokemon]?){
+
+    if let pokemons = pokemons{
+
+      self.arrayWithPokemons += pokemons
+      // Update Manager here
+        self.updateManager()
+      self.isFetchingUpdates = false
+    }
+  }
+
+  func NotifyErrorWhenGetDataFail(message:String){
+
+    // Do Actions With  message Here
+
+    // Clear Array
+    self.arrayWithPokemons = [Pokemon]()
+
+  }
+
 
 }
 
 extension PokemonListDataSource:PokeApiGetPokemonsResponseActionsDelegate{
 
+  func NextAndPreviosQueriesResult(previousQuery: String?, nextQuery: String?) {
+
+    self.UpdateQueries(nextQuery: nextQuery, previousQuery: previousQuery)
+
+  }
+
+
 
   func QueryResultData(pokemons: [Pokemon]?) {
 
-    if let pokemons = pokemons{
-
-      self.arrayWithPokemons = pokemons
-      // Update Manager here
-        self.updateManager()
-    }
+    self.UpdatePokemonsArray(pokemons: pokemons)
 
   }
 
   func QueryResultError(message: String) {
 
-    self.arrayWithPokemons = [Pokemon]()
+    self.NotifyErrorWhenGetDataFail(message: message)
+
     
   }
 

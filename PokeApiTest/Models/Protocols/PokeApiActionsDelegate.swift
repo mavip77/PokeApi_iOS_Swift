@@ -11,7 +11,7 @@ import Alamofire
 protocol PokeApiActionsDelegate {
 
   ///Get Pokemons in A simple query
-  func GetPokemons() -> Void
+  func GetPokemons(queryAsString:String?) -> Void
 
   ///Get Pokemons with last Index and Offset
   func GetPokemonsWithIndexAndOffsets(index:Int, offSet:Int) -> Void

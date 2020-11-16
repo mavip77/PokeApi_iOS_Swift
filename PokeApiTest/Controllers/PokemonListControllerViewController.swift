@@ -111,7 +111,7 @@ extension PokemonListControllerViewController : UIScrollViewDelegate{
     let distanceFromBottom = scrollView.contentSize.height - contentYoffset
     if distanceFromBottom < height {
       print("Load Next POkemons")
-      //dataSource.fetchNext()
+      self.listDataSource.FetchNext()
     }
 
   }
