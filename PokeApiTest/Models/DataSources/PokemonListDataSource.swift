@@ -26,7 +26,10 @@ class PokemonListDataSource: NSObject {
   var updateManager: () -> ()
 
   /// Var For Save WebService Query
-  var query:String?
+  var lastQuery:String? = nil
+
+  ///Var For Save Next Query
+  var nextQuery:String? = ConstantansApp.URL_BASE + ConstantansApp.INITIAL_ENDPOINT_FOR_QUERY_WITH_OFFSET
 
   /// Flag for fetch Updates
   var isFetchingUpdates = false
@@ -42,7 +45,7 @@ class PokemonListDataSource: NSObject {
  public init(query:String, updateManager: @escaping () -> ()){
 
 
-    self.query = query
+    self.lastQuery = query
     self.updateManager = updateManager
 
   }

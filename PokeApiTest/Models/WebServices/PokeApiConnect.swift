@@ -12,7 +12,7 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
  
 
 
-  let URL_FOR_BASIC_QUERY = ConstantansApp.URL_BASE + ConstantansApp.URL_BASE_BASIC_QUERY_POSTFIX
+  let URL_FOR_BASIC_QUERY = ConstantansApp.URL_BASE + ConstantansApp.URL_ENDPOINT_BASIC_QUERY_POSTFIX
 
    var actionsResponseDelegate:PokeApiGetPokemonsResponseActionsDelegate?
 
