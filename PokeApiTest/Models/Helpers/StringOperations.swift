@@ -34,4 +34,9 @@ class StringOperations: NSObject {
 
   }
 
+  func ReplaceCharacterInAresponse(baseString:String) -> String {
+    let stringResult = baseString.replacingOccurrences(of: "-", with: "_")
+    return stringResult
+  }
+
 }

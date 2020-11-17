@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 import AlamofireImage
 
 class PokemonDetail: UIViewController {
@@ -14,20 +15,40 @@ class PokemonDetail: UIViewController {
 
   var pokemonSelected:Pokemon?
 
+  var Api = PokeApiConnect()
+
   @IBOutlet weak var titleLabel: UILabel!
 
 
   @IBOutlet weak var pokemonImage: UIImageView!
 
+  //Outlets For Stat Base
 
+  @IBOutlet weak var HP: UILabel!
 
+  @IBOutlet weak var ATK: UILabel!
 
-    override func viewDidLoad() {
+  @IBOutlet weak var DEF: UILabel!
+
+  @IBOutlet weak var SATACK: UILabel!
+
+  @IBOutlet weak var SDEF: UILabel!
+
+  @IBOutlet weak var SPD: UILabel!
+
+  override func viewDidLoad() {
         super.viewDidLoad()
 
       print(pokemonSelected)
 
+      if let url = pokemonSelected?.url{
+        self.Api.GetPokemonSelectedDetailData(urlToPokemonData: url)
+      }
+
+
       populateData(pokemonSelected: self.pokemonSelected)
+
+
 
 
         // Do any additional setup after loading the view.
@@ -66,5 +87,18 @@ class PokemonDetail: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension PokemonDetail : PokeApiDetailPokemonsActions{
+  func PopulateDetailPokemon(response: PokemonDetailResponse) {
+
+    for item in response.stats{
+
+    }
+   
+
+  }
+
 
 }

@@ -46,6 +46,144 @@
 		0458A0F02560DC4D00B5C668 /* StringOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A0EF2560DC4D00B5C668 /* StringOperations.swift */; };
 		0458A0F12560DC4D00B5C668 /* StringOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A0EF2560DC4D00B5C668 /* StringOperations.swift */; };
 		0458A0F22560DC4D00B5C668 /* StringOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A0EF2560DC4D00B5C668 /* StringOperations.swift */; };
+		0459F05125635E61000EB3A1 /* Generation-vi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02525635E5A000EB3A1 /* Generation-vi.swift */; };
+		0459F05225635E61000EB3A1 /* Generation-vi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02525635E5A000EB3A1 /* Generation-vi.swift */; };
+		0459F05325635E61000EB3A1 /* Generation-vi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02525635E5A000EB3A1 /* Generation-vi.swift */; };
+		0459F05425635E61000EB3A1 /* Generation-iv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02625635E5A000EB3A1 /* Generation-iv.swift */; };
+		0459F05525635E61000EB3A1 /* Generation-iv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02625635E5A000EB3A1 /* Generation-iv.swift */; };
+		0459F05625635E61000EB3A1 /* Generation-iv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02625635E5A000EB3A1 /* Generation-iv.swift */; };
+		0459F05725635E61000EB3A1 /* Diamond-pearl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02725635E5C000EB3A1 /* Diamond-pearl.swift */; };
+		0459F05825635E61000EB3A1 /* Diamond-pearl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02725635E5C000EB3A1 /* Diamond-pearl.swift */; };
+		0459F05925635E61000EB3A1 /* Diamond-pearl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02725635E5C000EB3A1 /* Diamond-pearl.swift */; };
+		0459F05A25635E61000EB3A1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02825635E5C000EB3A1 /* Types.swift */; };
+		0459F05B25635E61000EB3A1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02825635E5C000EB3A1 /* Types.swift */; };
+		0459F05C25635E61000EB3A1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02825635E5C000EB3A1 /* Types.swift */; };
+		0459F05D25635E61000EB3A1 /* Yellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02925635E5C000EB3A1 /* Yellow.swift */; };
+		0459F05E25635E61000EB3A1 /* Yellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02925635E5C000EB3A1 /* Yellow.swift */; };
+		0459F05F25635E61000EB3A1 /* Yellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02925635E5C000EB3A1 /* Yellow.swift */; };
+		0459F06025635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02A25635E5D000EB3A1 /* Omegaruby-alphasapphire.swift */; };
+		0459F06125635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02A25635E5D000EB3A1 /* Omegaruby-alphasapphire.swift */; };
+		0459F06225635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02A25635E5D000EB3A1 /* Omegaruby-alphasapphire.swift */; };
+		0459F06325635E61000EB3A1 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02B25635E5D000EB3A1 /* Icons.swift */; };
+		0459F06425635E61000EB3A1 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02B25635E5D000EB3A1 /* Icons.swift */; };
+		0459F06525635E61000EB3A1 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02B25635E5D000EB3A1 /* Icons.swift */; };
+		0459F06625635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02C25635E5D000EB3A1 /* Heartgold-soulsilver.swift */; };
+		0459F06725635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02C25635E5D000EB3A1 /* Heartgold-soulsilver.swift */; };
+		0459F06825635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02C25635E5D000EB3A1 /* Heartgold-soulsilver.swift */; };
+		0459F06925635E61000EB3A1 /* Firered-leafgreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02D25635E5D000EB3A1 /* Firered-leafgreen.swift */; };
+		0459F06A25635E61000EB3A1 /* Firered-leafgreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02D25635E5D000EB3A1 /* Firered-leafgreen.swift */; };
+		0459F06B25635E61000EB3A1 /* Firered-leafgreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02D25635E5D000EB3A1 /* Firered-leafgreen.swift */; };
+		0459F06C25635E61000EB3A1 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02E25635E5D000EB3A1 /* Moves.swift */; };
+		0459F06D25635E61000EB3A1 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02E25635E5D000EB3A1 /* Moves.swift */; };
+		0459F06E25635E61000EB3A1 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02E25635E5D000EB3A1 /* Moves.swift */; };
+		0459F06F25635E61000EB3A1 /* Platinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02F25635E5D000EB3A1 /* Platinum.swift */; };
+		0459F07025635E61000EB3A1 /* Platinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02F25635E5D000EB3A1 /* Platinum.swift */; };
+		0459F07125635E61000EB3A1 /* Platinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F02F25635E5D000EB3A1 /* Platinum.swift */; };
+		0459F07225635E61000EB3A1 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03025635E5D000EB3A1 /* Other.swift */; };
+		0459F07325635E61000EB3A1 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03025635E5D000EB3A1 /* Other.swift */; };
+		0459F07425635E61000EB3A1 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03025635E5D000EB3A1 /* Other.swift */; };
+		0459F07525635E61000EB3A1 /* Red-blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03125635E5D000EB3A1 /* Red-blue.swift */; };
+		0459F07625635E61000EB3A1 /* Red-blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03125635E5D000EB3A1 /* Red-blue.swift */; };
+		0459F07725635E61000EB3A1 /* Red-blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03125635E5D000EB3A1 /* Red-blue.swift */; };
+		0459F07825635E61000EB3A1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03225635E5D000EB3A1 /* Type.swift */; };
+		0459F07925635E61000EB3A1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03225635E5D000EB3A1 /* Type.swift */; };
+		0459F07A25635E61000EB3A1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03225635E5D000EB3A1 /* Type.swift */; };
+		0459F07B25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03325635E5E000EB3A1 /* Json4Swift_Base.swift */; };
+		0459F07C25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03325635E5E000EB3A1 /* Json4Swift_Base.swift */; };
+		0459F07D25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03325635E5E000EB3A1 /* Json4Swift_Base.swift */; };
+		0459F07E25635E61000EB3A1 /* Generation-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03425635E5E000EB3A1 /* Generation-iii.swift */; };
+		0459F07F25635E61000EB3A1 /* Generation-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03425635E5E000EB3A1 /* Generation-iii.swift */; };
+		0459F08025635E61000EB3A1 /* Generation-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03425635E5E000EB3A1 /* Generation-iii.swift */; };
+		0459F08125635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03525635E5E000EB3A1 /* Ultra-sun-ultra-moon.swift */; };
+		0459F08225635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03525635E5E000EB3A1 /* Ultra-sun-ultra-moon.swift */; };
+		0459F08325635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03525635E5E000EB3A1 /* Ultra-sun-ultra-moon.swift */; };
+		0459F08425635E61000EB3A1 /* Generation-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03625635E5E000EB3A1 /* Generation-ii.swift */; };
+		0459F08525635E61000EB3A1 /* Generation-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03625635E5E000EB3A1 /* Generation-ii.swift */; };
+		0459F08625635E61000EB3A1 /* Generation-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03625635E5E000EB3A1 /* Generation-ii.swift */; };
+		0459F08725635E61000EB3A1 /* Version_group_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03725635E5E000EB3A1 /* Version_group_details.swift */; };
+		0459F08825635E61000EB3A1 /* Version_group_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03725635E5E000EB3A1 /* Version_group_details.swift */; };
+		0459F08925635E61000EB3A1 /* Version_group_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03725635E5E000EB3A1 /* Version_group_details.swift */; };
+		0459F08A25635E61000EB3A1 /* Version_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03825635E5E000EB3A1 /* Version_group.swift */; };
+		0459F08B25635E61000EB3A1 /* Version_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03825635E5E000EB3A1 /* Version_group.swift */; };
+		0459F08C25635E61000EB3A1 /* Version_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03825635E5E000EB3A1 /* Version_group.swift */; };
+		0459F08D25635E61000EB3A1 /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03925635E5E000EB3A1 /* Versions.swift */; };
+		0459F08E25635E61000EB3A1 /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03925635E5E000EB3A1 /* Versions.swift */; };
+		0459F08F25635E61000EB3A1 /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03925635E5E000EB3A1 /* Versions.swift */; };
+		0459F09025635E61000EB3A1 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03A25635E5E000EB3A1 /* Abilities.swift */; };
+		0459F09125635E61000EB3A1 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03A25635E5E000EB3A1 /* Abilities.swift */; };
+		0459F09225635E61000EB3A1 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03A25635E5E000EB3A1 /* Abilities.swift */; };
+		0459F09325635E61000EB3A1 /* Emerald.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03B25635E5E000EB3A1 /* Emerald.swift */; };
+		0459F09425635E61000EB3A1 /* Emerald.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03B25635E5E000EB3A1 /* Emerald.swift */; };
+		0459F09525635E61000EB3A1 /* Emerald.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03B25635E5E000EB3A1 /* Emerald.swift */; };
+		0459F09625635E61000EB3A1 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03C25635E5E000EB3A1 /* Stat.swift */; };
+		0459F09725635E61000EB3A1 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03C25635E5E000EB3A1 /* Stat.swift */; };
+		0459F09825635E61000EB3A1 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03C25635E5E000EB3A1 /* Stat.swift */; };
+		0459F09925635E61000EB3A1 /* X-y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03D25635E5E000EB3A1 /* X-y.swift */; };
+		0459F09A25635E61000EB3A1 /* X-y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03D25635E5E000EB3A1 /* X-y.swift */; };
+		0459F09B25635E61000EB3A1 /* X-y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03D25635E5E000EB3A1 /* X-y.swift */; };
+		0459F09C25635E61000EB3A1 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03E25635E5E000EB3A1 /* Crystal.swift */; };
+		0459F09D25635E61000EB3A1 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03E25635E5E000EB3A1 /* Crystal.swift */; };
+		0459F09E25635E61000EB3A1 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03E25635E5E000EB3A1 /* Crystal.swift */; };
+		0459F09F25635E61000EB3A1 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03F25635E5E000EB3A1 /* Sprites.swift */; };
+		0459F0A025635E61000EB3A1 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03F25635E5E000EB3A1 /* Sprites.swift */; };
+		0459F0A125635E61000EB3A1 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F03F25635E5E000EB3A1 /* Sprites.swift */; };
+		0459F0A225635E61000EB3A1 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04025635E5F000EB3A1 /* Species.swift */; };
+		0459F0A325635E61000EB3A1 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04025635E5F000EB3A1 /* Species.swift */; };
+		0459F0A425635E61000EB3A1 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04025635E5F000EB3A1 /* Species.swift */; };
+		0459F0A525635E61000EB3A1 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04125635E5F000EB3A1 /* Animated.swift */; };
+		0459F0A625635E61000EB3A1 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04125635E5F000EB3A1 /* Animated.swift */; };
+		0459F0A725635E61000EB3A1 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04125635E5F000EB3A1 /* Animated.swift */; };
+		0459F0A825635E61000EB3A1 /* Generation-viii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04225635E5F000EB3A1 /* Generation-viii.swift */; };
+		0459F0A925635E61000EB3A1 /* Generation-viii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04225635E5F000EB3A1 /* Generation-viii.swift */; };
+		0459F0AA25635E61000EB3A1 /* Generation-viii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04225635E5F000EB3A1 /* Generation-viii.swift */; };
+		0459F0AB25635E61000EB3A1 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04325635E60000EB3A1 /* Move.swift */; };
+		0459F0AC25635E61000EB3A1 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04325635E60000EB3A1 /* Move.swift */; };
+		0459F0AD25635E61000EB3A1 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04325635E60000EB3A1 /* Move.swift */; };
+		0459F0AE25635E61000EB3A1 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04425635E60000EB3A1 /* Dream_world.swift */; };
+		0459F0AF25635E61000EB3A1 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04425635E60000EB3A1 /* Dream_world.swift */; };
+		0459F0B025635E61000EB3A1 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04425635E60000EB3A1 /* Dream_world.swift */; };
+		0459F0B125635E61000EB3A1 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04525635E60000EB3A1 /* Ability.swift */; };
+		0459F0B225635E61000EB3A1 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04525635E60000EB3A1 /* Ability.swift */; };
+		0459F0B325635E61000EB3A1 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04525635E60000EB3A1 /* Ability.swift */; };
+		0459F0B425635E61000EB3A1 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04625635E60000EB3A1 /* Stats.swift */; };
+		0459F0B525635E61000EB3A1 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04625635E60000EB3A1 /* Stats.swift */; };
+		0459F0B625635E61000EB3A1 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04625635E60000EB3A1 /* Stats.swift */; };
+		0459F0B725635E61000EB3A1 /* Generation-i.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04725635E60000EB3A1 /* Generation-i.swift */; };
+		0459F0B825635E61000EB3A1 /* Generation-i.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04725635E60000EB3A1 /* Generation-i.swift */; };
+		0459F0B925635E61000EB3A1 /* Generation-i.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04725635E60000EB3A1 /* Generation-i.swift */; };
+		0459F0BA25635E61000EB3A1 /* Gold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04825635E60000EB3A1 /* Gold.swift */; };
+		0459F0BB25635E61000EB3A1 /* Gold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04825635E60000EB3A1 /* Gold.swift */; };
+		0459F0BC25635E61000EB3A1 /* Gold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04825635E60000EB3A1 /* Gold.swift */; };
+		0459F0BD25635E61000EB3A1 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04925635E60000EB3A1 /* Generation-v.swift */; };
+		0459F0BE25635E61000EB3A1 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04925635E60000EB3A1 /* Generation-v.swift */; };
+		0459F0BF25635E61000EB3A1 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04925635E60000EB3A1 /* Generation-v.swift */; };
+		0459F0C025635E61000EB3A1 /* Move_learn_method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04A25635E60000EB3A1 /* Move_learn_method.swift */; };
+		0459F0C125635E61000EB3A1 /* Move_learn_method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04A25635E60000EB3A1 /* Move_learn_method.swift */; };
+		0459F0C225635E61000EB3A1 /* Move_learn_method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04A25635E60000EB3A1 /* Move_learn_method.swift */; };
+		0459F0C325635E61000EB3A1 /* Generation-vii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04B25635E60000EB3A1 /* Generation-vii.swift */; };
+		0459F0C425635E61000EB3A1 /* Generation-vii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04B25635E60000EB3A1 /* Generation-vii.swift */; };
+		0459F0C525635E61000EB3A1 /* Generation-vii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04B25635E60000EB3A1 /* Generation-vii.swift */; };
+		0459F0C625635E61000EB3A1 /* Black-white.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04C25635E60000EB3A1 /* Black-white.swift */; };
+		0459F0C725635E61000EB3A1 /* Black-white.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04C25635E60000EB3A1 /* Black-white.swift */; };
+		0459F0C825635E61000EB3A1 /* Black-white.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04C25635E60000EB3A1 /* Black-white.swift */; };
+		0459F0C925635E61000EB3A1 /* Ruby-sapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04D25635E60000EB3A1 /* Ruby-sapphire.swift */; };
+		0459F0CA25635E61000EB3A1 /* Ruby-sapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04D25635E60000EB3A1 /* Ruby-sapphire.swift */; };
+		0459F0CB25635E61000EB3A1 /* Ruby-sapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04D25635E60000EB3A1 /* Ruby-sapphire.swift */; };
+		0459F0CC25635E61000EB3A1 /* Silver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04E25635E60000EB3A1 /* Silver.swift */; };
+		0459F0CD25635E61000EB3A1 /* Silver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04E25635E60000EB3A1 /* Silver.swift */; };
+		0459F0CE25635E61000EB3A1 /* Silver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04E25635E60000EB3A1 /* Silver.swift */; };
+		0459F0CF25635E61000EB3A1 /* Official-artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04F25635E61000EB3A1 /* Official-artwork.swift */; };
+		0459F0D025635E61000EB3A1 /* Official-artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04F25635E61000EB3A1 /* Official-artwork.swift */; };
+		0459F0D125635E61000EB3A1 /* Official-artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F04F25635E61000EB3A1 /* Official-artwork.swift */; };
+		0459F0D225635E61000EB3A1 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F05025635E61000EB3A1 /* Forms.swift */; };
+		0459F0D325635E61000EB3A1 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F05025635E61000EB3A1 /* Forms.swift */; };
+		0459F0D425635E61000EB3A1 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F05025635E61000EB3A1 /* Forms.swift */; };
+		0459F0DC25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0DB25639C09000EB3A1 /* PokemonDetailResponse.swift */; };
+		0459F0DD25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0DB25639C09000EB3A1 /* PokemonDetailResponse.swift */; };
+		0459F0DE25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0DB25639C09000EB3A1 /* PokemonDetailResponse.swift */; };
+		0459F0E32563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0E22563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift */; };
+		0459F0E42563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0E22563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift */; };
+		0459F0E52563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F0E22563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift */; };
 		04936E5C2561848100F5469E /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04936E5B2561848100F5469E /* PokemonDetail.swift */; };
 		04936E5D2561848100F5469E /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04936E5B2561848100F5469E /* PokemonDetail.swift */; };
 		04936E5E2561848100F5469E /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04936E5B2561848100F5469E /* PokemonDetail.swift */; };
@@ -100,6 +238,52 @@
 		0413984B25604B3800DAE51F /* PokeApiActionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiActionsDelegate.swift; sourceTree = "<group>"; };
 		0458A0D925608C8A00B5C668 /* PokeApiGetPokemonsResponseActionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiGetPokemonsResponseActionsDelegate.swift; sourceTree = "<group>"; };
 		0458A0EF2560DC4D00B5C668 /* StringOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOperations.swift; sourceTree = "<group>"; };
+		0459F02525635E5A000EB3A1 /* Generation-vi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-vi.swift"; sourceTree = "<group>"; };
+		0459F02625635E5A000EB3A1 /* Generation-iv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-iv.swift"; sourceTree = "<group>"; };
+		0459F02725635E5C000EB3A1 /* Diamond-pearl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diamond-pearl.swift"; sourceTree = "<group>"; };
+		0459F02825635E5C000EB3A1 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		0459F02925635E5C000EB3A1 /* Yellow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow.swift; sourceTree = "<group>"; };
+		0459F02A25635E5D000EB3A1 /* Omegaruby-alphasapphire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Omegaruby-alphasapphire.swift"; sourceTree = "<group>"; };
+		0459F02B25635E5D000EB3A1 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		0459F02C25635E5D000EB3A1 /* Heartgold-soulsilver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Heartgold-soulsilver.swift"; sourceTree = "<group>"; };
+		0459F02D25635E5D000EB3A1 /* Firered-leafgreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firered-leafgreen.swift"; sourceTree = "<group>"; };
+		0459F02E25635E5D000EB3A1 /* Moves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
+		0459F02F25635E5D000EB3A1 /* Platinum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platinum.swift; sourceTree = "<group>"; };
+		0459F03025635E5D000EB3A1 /* Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		0459F03125635E5D000EB3A1 /* Red-blue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Red-blue.swift"; sourceTree = "<group>"; };
+		0459F03225635E5D000EB3A1 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		0459F03325635E5E000EB3A1 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		0459F03425635E5E000EB3A1 /* Generation-iii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-iii.swift"; sourceTree = "<group>"; };
+		0459F03525635E5E000EB3A1 /* Ultra-sun-ultra-moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ultra-sun-ultra-moon.swift"; sourceTree = "<group>"; };
+		0459F03625635E5E000EB3A1 /* Generation-ii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-ii.swift"; sourceTree = "<group>"; };
+		0459F03725635E5E000EB3A1 /* Version_group_details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version_group_details.swift; sourceTree = "<group>"; };
+		0459F03825635E5E000EB3A1 /* Version_group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version_group.swift; sourceTree = "<group>"; };
+		0459F03925635E5E000EB3A1 /* Versions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versions.swift; sourceTree = "<group>"; };
+		0459F03A25635E5E000EB3A1 /* Abilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		0459F03B25635E5E000EB3A1 /* Emerald.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emerald.swift; sourceTree = "<group>"; };
+		0459F03C25635E5E000EB3A1 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		0459F03D25635E5E000EB3A1 /* X-y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "X-y.swift"; sourceTree = "<group>"; };
+		0459F03E25635E5E000EB3A1 /* Crystal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crystal.swift; sourceTree = "<group>"; };
+		0459F03F25635E5E000EB3A1 /* Sprites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
+		0459F04025635E5F000EB3A1 /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		0459F04125635E5F000EB3A1 /* Animated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animated.swift; sourceTree = "<group>"; };
+		0459F04225635E5F000EB3A1 /* Generation-viii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-viii.swift"; sourceTree = "<group>"; };
+		0459F04325635E60000EB3A1 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		0459F04425635E60000EB3A1 /* Dream_world.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream_world.swift; sourceTree = "<group>"; };
+		0459F04525635E60000EB3A1 /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		0459F04625635E60000EB3A1 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		0459F04725635E60000EB3A1 /* Generation-i.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-i.swift"; sourceTree = "<group>"; };
+		0459F04825635E60000EB3A1 /* Gold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gold.swift; sourceTree = "<group>"; };
+		0459F04925635E60000EB3A1 /* Generation-v.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-v.swift"; sourceTree = "<group>"; };
+		0459F04A25635E60000EB3A1 /* Move_learn_method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move_learn_method.swift; sourceTree = "<group>"; };
+		0459F04B25635E60000EB3A1 /* Generation-vii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-vii.swift"; sourceTree = "<group>"; };
+		0459F04C25635E60000EB3A1 /* Black-white.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Black-white.swift"; sourceTree = "<group>"; };
+		0459F04D25635E60000EB3A1 /* Ruby-sapphire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ruby-sapphire.swift"; sourceTree = "<group>"; };
+		0459F04E25635E60000EB3A1 /* Silver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Silver.swift; sourceTree = "<group>"; };
+		0459F04F25635E61000EB3A1 /* Official-artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Official-artwork.swift"; sourceTree = "<group>"; };
+		0459F05025635E61000EB3A1 /* Forms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
+		0459F0DB25639C09000EB3A1 /* PokemonDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailResponse.swift; sourceTree = "<group>"; };
+		0459F0E22563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiDetailPokemonsActions.swift; sourceTree = "<group>"; };
 		04936E5B2561848100F5469E /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 		04F0E20825616AF6009B75BE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		15A4A928D4A9B4A2D85B5AC6 /* Pods-PokeApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeApiTest.debug.xcconfig"; path = "Target Support Files/Pods-PokeApiTest/Pods-PokeApiTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,8 +417,53 @@
 		04139810256037BF00DAE51F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0459F03A25635E5E000EB3A1 /* Abilities.swift */,
+				0459F04525635E60000EB3A1 /* Ability.swift */,
+				0459F04125635E5F000EB3A1 /* Animated.swift */,
+				0459F04C25635E60000EB3A1 /* Black-white.swift */,
+				0459F03E25635E5E000EB3A1 /* Crystal.swift */,
+				0459F02725635E5C000EB3A1 /* Diamond-pearl.swift */,
+				0459F04425635E60000EB3A1 /* Dream_world.swift */,
+				0459F03B25635E5E000EB3A1 /* Emerald.swift */,
+				0459F02D25635E5D000EB3A1 /* Firered-leafgreen.swift */,
+				0459F05025635E61000EB3A1 /* Forms.swift */,
+				0459F04725635E60000EB3A1 /* Generation-i.swift */,
+				0459F03625635E5E000EB3A1 /* Generation-ii.swift */,
+				0459F03425635E5E000EB3A1 /* Generation-iii.swift */,
+				0459F02625635E5A000EB3A1 /* Generation-iv.swift */,
+				0459F04925635E60000EB3A1 /* Generation-v.swift */,
+				0459F02525635E5A000EB3A1 /* Generation-vi.swift */,
+				0459F04B25635E60000EB3A1 /* Generation-vii.swift */,
+				0459F04225635E5F000EB3A1 /* Generation-viii.swift */,
+				0459F04825635E60000EB3A1 /* Gold.swift */,
+				0459F02C25635E5D000EB3A1 /* Heartgold-soulsilver.swift */,
+				0459F02B25635E5D000EB3A1 /* Icons.swift */,
+				0459F03325635E5E000EB3A1 /* Json4Swift_Base.swift */,
+				0459F04A25635E60000EB3A1 /* Move_learn_method.swift */,
+				0459F04325635E60000EB3A1 /* Move.swift */,
+				0459F02E25635E5D000EB3A1 /* Moves.swift */,
+				0459F04F25635E61000EB3A1 /* Official-artwork.swift */,
+				0459F02A25635E5D000EB3A1 /* Omegaruby-alphasapphire.swift */,
+				0459F03025635E5D000EB3A1 /* Other.swift */,
+				0459F02F25635E5D000EB3A1 /* Platinum.swift */,
+				0459F03125635E5D000EB3A1 /* Red-blue.swift */,
+				0459F04D25635E60000EB3A1 /* Ruby-sapphire.swift */,
+				0459F04E25635E60000EB3A1 /* Silver.swift */,
+				0459F04025635E5F000EB3A1 /* Species.swift */,
+				0459F03F25635E5E000EB3A1 /* Sprites.swift */,
+				0459F03C25635E5E000EB3A1 /* Stat.swift */,
+				0459F04625635E60000EB3A1 /* Stats.swift */,
+				0459F03225635E5D000EB3A1 /* Type.swift */,
+				0459F02825635E5C000EB3A1 /* Types.swift */,
+				0459F03525635E5E000EB3A1 /* Ultra-sun-ultra-moon.swift */,
+				0459F03725635E5E000EB3A1 /* Version_group_details.swift */,
+				0459F03825635E5E000EB3A1 /* Version_group.swift */,
+				0459F03925635E5E000EB3A1 /* Versions.swift */,
+				0459F03D25635E5E000EB3A1 /* X-y.swift */,
+				0459F02925635E5C000EB3A1 /* Yellow.swift */,
 				0413982B25603DF000DAE51F /* Pokemon.swift */,
 				0413983225603E1900DAE51F /* ApiResponse.swift */,
+				0459F0DB25639C09000EB3A1 /* PokemonDetailResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -252,6 +481,7 @@
 			children = (
 				0413984B25604B3800DAE51F /* PokeApiActionsDelegate.swift */,
 				0458A0D925608C8A00B5C668 /* PokeApiGetPokemonsResponseActionsDelegate.swift */,
+				0459F0E22563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -558,21 +788,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				0413984C25604B3800DAE51F /* PokeApiActionsDelegate.swift in Sources */,
+				0459F0CF25635E61000EB3A1 /* Official-artwork.swift in Sources */,
 				041397CF2560179200DAE51F /* ViewController.swift in Sources */,
+				0459F05725635E61000EB3A1 /* Diamond-pearl.swift in Sources */,
+				0459F07E25635E61000EB3A1 /* Generation-iii.swift in Sources */,
+				0459F05A25635E61000EB3A1 /* Types.swift in Sources */,
+				0459F06625635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */,
+				0459F0C925635E61000EB3A1 /* Ruby-sapphire.swift in Sources */,
+				0459F07825635E61000EB3A1 /* Type.swift in Sources */,
 				0413984225604ACF00DAE51F /* PokeApiConnect.swift in Sources */,
+				0459F0A225635E61000EB3A1 /* Species.swift in Sources */,
+				0459F0BD25635E61000EB3A1 /* Generation-v.swift in Sources */,
+				0459F08A25635E61000EB3A1 /* Version_group.swift in Sources */,
+				0459F06C25635E61000EB3A1 /* Moves.swift in Sources */,
 				0413982C25603DF000DAE51F /* Pokemon.swift in Sources */,
+				0459F09F25635E61000EB3A1 /* Sprites.swift in Sources */,
+				0459F0E32563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */,
 				041397D52560179200DAE51F /* PokeApiTest.xcdatamodeld in Sources */,
 				041397CB2560179200DAE51F /* AppDelegate.swift in Sources */,
 				0458A0F02560DC4D00B5C668 /* StringOperations.swift in Sources */,
 				0413982025603D3000DAE51F /* PokemonTableViewCell.swift in Sources */,
+				0459F0C025635E61000EB3A1 /* Move_learn_method.swift in Sources */,
+				0459F0D225635E61000EB3A1 /* Forms.swift in Sources */,
+				0459F07525635E61000EB3A1 /* Red-blue.swift in Sources */,
+				0459F07225635E61000EB3A1 /* Other.swift in Sources */,
+				0459F06925635E61000EB3A1 /* Firered-leafgreen.swift in Sources */,
 				0458A0DA25608C8A00B5C668 /* PokeApiGetPokemonsResponseActionsDelegate.swift in Sources */,
+				0459F0B425635E61000EB3A1 /* Stats.swift in Sources */,
 				04F0E20925616AF6009B75BE /* ViewExtensions.swift in Sources */,
+				0459F0BA25635E61000EB3A1 /* Gold.swift in Sources */,
+				0459F09C25635E61000EB3A1 /* Crystal.swift in Sources */,
+				0459F05425635E61000EB3A1 /* Generation-iv.swift in Sources */,
+				0459F08D25635E61000EB3A1 /* Versions.swift in Sources */,
+				0459F0CC25635E61000EB3A1 /* Silver.swift in Sources */,
+				0459F06F25635E61000EB3A1 /* Platinum.swift in Sources */,
+				0459F05D25635E61000EB3A1 /* Yellow.swift in Sources */,
+				0459F08725635E61000EB3A1 /* Version_group_details.swift in Sources */,
+				0459F0AE25635E61000EB3A1 /* Dream_world.swift in Sources */,
+				0459F08125635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */,
+				0459F09025635E61000EB3A1 /* Abilities.swift in Sources */,
+				0459F0B125635E61000EB3A1 /* Ability.swift in Sources */,
+				0459F0DC25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */,
 				04936E5C2561848100F5469E /* PokemonDetail.swift in Sources */,
 				0413981925603CB900DAE51F /* PokemonListControllerViewController.swift in Sources */,
+				0459F07B25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */,
+				0459F0C625635E61000EB3A1 /* Black-white.swift in Sources */,
+				0459F06025635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */,
 				0413983325603E1900DAE51F /* ApiResponse.swift in Sources */,
+				0459F0AB25635E61000EB3A1 /* Move.swift in Sources */,
 				041397CD2560179200DAE51F /* SceneDelegate.swift in Sources */,
+				0459F09625635E61000EB3A1 /* Stat.swift in Sources */,
+				0459F0C325635E61000EB3A1 /* Generation-vii.swift in Sources */,
+				0459F05125635E61000EB3A1 /* Generation-vi.swift in Sources */,
 				0413983A2560490E00DAE51F /* ConstantansApp.swift in Sources */,
+				0459F08425635E61000EB3A1 /* Generation-ii.swift in Sources */,
+				0459F0A525635E61000EB3A1 /* Animated.swift in Sources */,
+				0459F09925635E61000EB3A1 /* X-y.swift in Sources */,
 				0413982425603D9A00DAE51F /* PokemonListDataSource.swift in Sources */,
+				0459F09325635E61000EB3A1 /* Emerald.swift in Sources */,
+				0459F0B725635E61000EB3A1 /* Generation-i.swift in Sources */,
+				0459F0A825635E61000EB3A1 /* Generation-viii.swift in Sources */,
+				0459F06325635E61000EB3A1 /* Icons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,19 +856,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459F05225635E61000EB3A1 /* Generation-vi.swift in Sources */,
+				0459F05E25635E61000EB3A1 /* Yellow.swift in Sources */,
+				0459F0A325635E61000EB3A1 /* Species.swift in Sources */,
+				0459F0A025635E61000EB3A1 /* Sprites.swift in Sources */,
+				0459F0BE25635E61000EB3A1 /* Generation-v.swift in Sources */,
 				0413984D25604B3800DAE51F /* PokeApiActionsDelegate.swift in Sources */,
+				0459F06A25635E61000EB3A1 /* Firered-leafgreen.swift in Sources */,
 				0413982D25603DF000DAE51F /* Pokemon.swift in Sources */,
+				0459F0C725635E61000EB3A1 /* Black-white.swift in Sources */,
+				0459F07C25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */,
+				0459F07625635E61000EB3A1 /* Red-blue.swift in Sources */,
+				0459F05B25635E61000EB3A1 /* Types.swift in Sources */,
+				0459F0BB25635E61000EB3A1 /* Gold.swift in Sources */,
+				0459F08B25635E61000EB3A1 /* Version_group.swift in Sources */,
+				0459F09725635E61000EB3A1 /* Stat.swift in Sources */,
+				0459F0CA25635E61000EB3A1 /* Ruby-sapphire.swift in Sources */,
+				0459F09125635E61000EB3A1 /* Abilities.swift in Sources */,
+				0459F09425635E61000EB3A1 /* Emerald.swift in Sources */,
 				0413982125603D3000DAE51F /* PokemonTableViewCell.swift in Sources */,
+				0459F0B825635E61000EB3A1 /* Generation-i.swift in Sources */,
+				0459F0C125635E61000EB3A1 /* Move_learn_method.swift in Sources */,
 				0413984325604ACF00DAE51F /* PokeApiConnect.swift in Sources */,
+				0459F0A625635E61000EB3A1 /* Animated.swift in Sources */,
 				0458A0DB25608C8A00B5C668 /* PokeApiGetPokemonsResponseActionsDelegate.swift in Sources */,
 				0413981A25603CB900DAE51F /* PokemonListControllerViewController.swift in Sources */,
+				0459F09A25635E61000EB3A1 /* X-y.swift in Sources */,
 				04F0E20A25616AF6009B75BE /* ViewExtensions.swift in Sources */,
+				0459F08825635E61000EB3A1 /* Version_group_details.swift in Sources */,
 				0413983425603E1900DAE51F /* ApiResponse.swift in Sources */,
 				0413983B2560490E00DAE51F /* ConstantansApp.swift in Sources */,
+				0459F0D325635E61000EB3A1 /* Forms.swift in Sources */,
+				0459F0B225635E61000EB3A1 /* Ability.swift in Sources */,
 				0413982525603D9A00DAE51F /* PokemonListDataSource.swift in Sources */,
+				0459F06725635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */,
+				0459F05825635E61000EB3A1 /* Diamond-pearl.swift in Sources */,
+				0459F0C425635E61000EB3A1 /* Generation-vii.swift in Sources */,
+				0459F08E25635E61000EB3A1 /* Versions.swift in Sources */,
 				041397E52560179C00DAE51F /* PokeApiTestTests.swift in Sources */,
+				0459F08525635E61000EB3A1 /* Generation-ii.swift in Sources */,
 				04936E5D2561848100F5469E /* PokemonDetail.swift in Sources */,
+				0459F07325635E61000EB3A1 /* Other.swift in Sources */,
+				0459F0AC25635E61000EB3A1 /* Move.swift in Sources */,
+				0459F05525635E61000EB3A1 /* Generation-iv.swift in Sources */,
+				0459F07025635E61000EB3A1 /* Platinum.swift in Sources */,
 				0458A0F12560DC4D00B5C668 /* StringOperations.swift in Sources */,
+				0459F06425635E61000EB3A1 /* Icons.swift in Sources */,
+				0459F0AF25635E61000EB3A1 /* Dream_world.swift in Sources */,
+				0459F0CD25635E61000EB3A1 /* Silver.swift in Sources */,
+				0459F08225635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */,
+				0459F06D25635E61000EB3A1 /* Moves.swift in Sources */,
+				0459F0B525635E61000EB3A1 /* Stats.swift in Sources */,
+				0459F0DD25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */,
+				0459F06125635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */,
+				0459F07925635E61000EB3A1 /* Type.swift in Sources */,
+				0459F0A925635E61000EB3A1 /* Generation-viii.swift in Sources */,
+				0459F0D025635E61000EB3A1 /* Official-artwork.swift in Sources */,
+				0459F07F25635E61000EB3A1 /* Generation-iii.swift in Sources */,
+				0459F0E42563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */,
+				0459F09D25635E61000EB3A1 /* Crystal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,19 +922,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459F05325635E61000EB3A1 /* Generation-vi.swift in Sources */,
+				0459F05F25635E61000EB3A1 /* Yellow.swift in Sources */,
+				0459F0A425635E61000EB3A1 /* Species.swift in Sources */,
+				0459F0A125635E61000EB3A1 /* Sprites.swift in Sources */,
+				0459F0BF25635E61000EB3A1 /* Generation-v.swift in Sources */,
 				0413984E25604B3800DAE51F /* PokeApiActionsDelegate.swift in Sources */,
+				0459F06B25635E61000EB3A1 /* Firered-leafgreen.swift in Sources */,
 				0413982E25603DF000DAE51F /* Pokemon.swift in Sources */,
+				0459F0C825635E61000EB3A1 /* Black-white.swift in Sources */,
+				0459F07D25635E61000EB3A1 /* Json4Swift_Base.swift in Sources */,
+				0459F07725635E61000EB3A1 /* Red-blue.swift in Sources */,
+				0459F05C25635E61000EB3A1 /* Types.swift in Sources */,
+				0459F0BC25635E61000EB3A1 /* Gold.swift in Sources */,
+				0459F08C25635E61000EB3A1 /* Version_group.swift in Sources */,
+				0459F09825635E61000EB3A1 /* Stat.swift in Sources */,
+				0459F0CB25635E61000EB3A1 /* Ruby-sapphire.swift in Sources */,
+				0459F09225635E61000EB3A1 /* Abilities.swift in Sources */,
+				0459F09525635E61000EB3A1 /* Emerald.swift in Sources */,
 				0413982225603D3000DAE51F /* PokemonTableViewCell.swift in Sources */,
+				0459F0B925635E61000EB3A1 /* Generation-i.swift in Sources */,
+				0459F0C225635E61000EB3A1 /* Move_learn_method.swift in Sources */,
 				0413984425604ACF00DAE51F /* PokeApiConnect.swift in Sources */,
+				0459F0A725635E61000EB3A1 /* Animated.swift in Sources */,
 				0458A0DC25608C8A00B5C668 /* PokeApiGetPokemonsResponseActionsDelegate.swift in Sources */,
 				0413981B25603CB900DAE51F /* PokemonListControllerViewController.swift in Sources */,
+				0459F09B25635E61000EB3A1 /* X-y.swift in Sources */,
 				04F0E20B25616AF6009B75BE /* ViewExtensions.swift in Sources */,
+				0459F08925635E61000EB3A1 /* Version_group_details.swift in Sources */,
 				0413983525603E1900DAE51F /* ApiResponse.swift in Sources */,
 				0413983C2560490E00DAE51F /* ConstantansApp.swift in Sources */,
+				0459F0D425635E61000EB3A1 /* Forms.swift in Sources */,
+				0459F0B325635E61000EB3A1 /* Ability.swift in Sources */,
 				0413982625603D9A00DAE51F /* PokemonListDataSource.swift in Sources */,
+				0459F06825635E61000EB3A1 /* Heartgold-soulsilver.swift in Sources */,
+				0459F05925635E61000EB3A1 /* Diamond-pearl.swift in Sources */,
+				0459F0C525635E61000EB3A1 /* Generation-vii.swift in Sources */,
+				0459F08F25635E61000EB3A1 /* Versions.swift in Sources */,
 				041397F02560179C00DAE51F /* PokeApiTestUITests.swift in Sources */,
+				0459F08625635E61000EB3A1 /* Generation-ii.swift in Sources */,
 				04936E5E2561848100F5469E /* PokemonDetail.swift in Sources */,
+				0459F07425635E61000EB3A1 /* Other.swift in Sources */,
+				0459F0AD25635E61000EB3A1 /* Move.swift in Sources */,
+				0459F05625635E61000EB3A1 /* Generation-iv.swift in Sources */,
+				0459F07125635E61000EB3A1 /* Platinum.swift in Sources */,
 				0458A0F22560DC4D00B5C668 /* StringOperations.swift in Sources */,
+				0459F06525635E61000EB3A1 /* Icons.swift in Sources */,
+				0459F0B025635E61000EB3A1 /* Dream_world.swift in Sources */,
+				0459F0CE25635E61000EB3A1 /* Silver.swift in Sources */,
+				0459F08325635E61000EB3A1 /* Ultra-sun-ultra-moon.swift in Sources */,
+				0459F06E25635E61000EB3A1 /* Moves.swift in Sources */,
+				0459F0B625635E61000EB3A1 /* Stats.swift in Sources */,
+				0459F0DE25639C09000EB3A1 /* PokemonDetailResponse.swift in Sources */,
+				0459F06225635E61000EB3A1 /* Omegaruby-alphasapphire.swift in Sources */,
+				0459F07A25635E61000EB3A1 /* Type.swift in Sources */,
+				0459F0AA25635E61000EB3A1 /* Generation-viii.swift in Sources */,
+				0459F0D125635E61000EB3A1 /* Official-artwork.swift in Sources */,
+				0459F08025635E61000EB3A1 /* Generation-iii.swift in Sources */,
+				0459F0E52563A022000EB3A1 /* PokeApiDetailPokemonsActions.swift in Sources */,
+				0459F09E25635E61000EB3A1 /* Crystal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

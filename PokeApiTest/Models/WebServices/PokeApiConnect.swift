@@ -16,6 +16,10 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
 
    var actionsResponseDelegate:PokeApiGetPokemonsResponseActionsDelegate?
 
+  var actionsResponseDelegateForDetailPOkemonsView:PokeApiDetailPokemonsActions?
+
+  var StringActions = StringOperations()
+
 
   func GetPokemons(queryAsString:String?) -> Void {
 
@@ -43,6 +47,7 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
 
       }
     }
+
 
 
 
@@ -97,6 +102,81 @@ class PokeApiConnect: NSObject, PokeApiActionsDelegate {
     }
      */
 
+
+  }
+
+  func GetPokemonSelectedDetailData(urlToPokemonData:String){
+
+    let requestDetailData = AF.request(urlToPokemonData, method: .get, parameters: nil, encoding: URLEncoding(destination: .methodDependent), headers: nil, interceptor: nil, requestModifier: nil)
+      .validate(statusCode: 200..<300)
+      .validate(contentType: ["application/json"])
+
+    requestDetailData.responseJSON{
+      response in
+
+      if let  responseAsString = response.value{
+      //  print(responseAsString)
+
+       
+
+
+
+        if let object = responseAsString as? [String:Any]{
+
+        //  print(object)
+
+          let base_experience = object["base_experience"] as! Int
+          let height = object["height"] as! Int
+          let weigth = object["weight"] as! Int
+          let stats = object["stats"] as! [Any]
+
+          var statsDetailArray = [StatsDetail]()
+
+          for item in stats {
+            let stat = item as! [String:Any]
+            print(stat)
+            let base_stat = stat["base_stat"] as! Int
+            let effor = stat["effort"] as! Int
+            let statDict = stat["stat"] as![String:Any]
+            let url = statDict["url"] as! String
+            let name = statDict["name"] as! String
+
+            let statDetail = StatDetail(url: url, name: name)
+            let statsDetail = StatsDetail(base_stat: base_stat, effort: effor, statDetail: statDetail)
+
+            statsDetailArray.append(statsDetail)
+            print(name)
+          }
+
+          let pokemonDetailResponse = PokemonDetailResponse(base_experience: base_experience, height: height, weight: weigth, stats: statsDetailArray)
+
+          self.actionsResponseDelegateForDetailPOkemonsView?.PopulateDetailPokemon(response: pokemonDetailResponse)
+        //  let Abilities = object["abilities"] as! [Abilities]
+         // let baseStats = stats["base_stat"] as! Dictionary<String,Int64>
+
+         // print("Las Stats \(Abilities)")
+        }
+
+
+
+
+        } else {
+        print("JSON is invalid")
+        }
+
+     //   let stringModified = self.StringActions.ReplaceCharacterInAresponse(baseString: responseAsString as! String)
+
+
+      
+
+
+
+    }
+   /* requestDetailData.responseDecodable(of: Json4Swift_Base.self){
+      response in
+      print("Response \(response)")
+    }
+ */
 
   }
 
