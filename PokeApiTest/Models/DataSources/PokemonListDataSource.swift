@@ -20,6 +20,10 @@ class PokemonListDataSource: NSObject {
 
   var arrayWithPokemons:[Pokemon] = []
 
+  var arrayWithPokemonsBackup:[Pokemon] = []
+
+  var arrayWithPokemonsSearchResult:[Pokemon] = []
+
   var pokemon:Pokemon?
 
   ///Constante for update user gesture scroll down
@@ -60,6 +64,11 @@ class PokemonListDataSource: NSObject {
 
     isFetchingUpdates = true
 
+    // Reload Array with pokemons if previously has been changed for a search for word action
+    if !self.arrayWithPokemonsBackup.isEmpty{
+      self.arrayWithPokemons = self.arrayWithPokemonsBackup
+    }
+
     // Review if Next Query 1= nil then realize query
     if let query = self.nextQuery{
 
@@ -72,9 +81,6 @@ class PokemonListDataSource: NSObject {
     }
 
 
-
-
-
     /*
     if isFetchingUpdates{
       return
@@ -85,6 +91,31 @@ class PokemonListDataSource: NSObject {
     */
 
   }
+
+  ///Function For fecth Pokemons in array When the User
+      public func FecthDataWhenUserSearchPokemon(pokemonName:String){
+
+        if arrayWithPokemonsBackup.isEmpty{
+
+          self.arrayWithPokemonsBackup = arrayWithPokemons
+
+
+        }
+
+        guard !pokemonName.isEmpty else {
+          self.arrayWithPokemons = self.arrayWithPokemonsBackup
+          self.updateManager()
+          return
+        }
+
+        self.arrayWithPokemons.removeAll()
+
+        self.arrayWithPokemons = self.arrayWithPokemonsBackup.filter({
+          pokemon in
+          return pokemon.name.contains(pokemonName)
+        })
+        self.updateManager()
+      }
 
   func UpdateQueries(nextQuery:String?, previousQuery:String?){
 
@@ -158,7 +189,10 @@ extension PokemonListDataSource: UITableViewDataSource{
       let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonList_RI") as! PokemonTableViewCell
 
     //Set Id For a Pokemon
-    arrayWithPokemons[indexPath.row].id = setIdToPokemons(url: arrayWithPokemons[indexPath.row].url)
+
+    if arrayWithPokemons[indexPath.row].id == nil{
+      arrayWithPokemons[indexPath.row].id = setIdToPokemons(url: arrayWithPokemons[indexPath.row].url)
+    }
 
        pokemon = arrayWithPokemons[indexPath.row]
 

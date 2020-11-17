@@ -26,4 +26,12 @@ class StringOperations: NSObject {
 
   }
 
+  func TranslateStringToLowerCase(baseString:String) -> String {
+
+    let lowerCasedString = baseString.lowercased()
+
+    return lowerCasedString
+
+  }
+
 }

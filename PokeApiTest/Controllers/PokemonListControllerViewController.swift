@@ -14,6 +14,11 @@ class PokemonListControllerViewController: UIViewController {
  
   var pokemonSelected : Pokemon?
 
+  ///flag for stop load data if a search is in search view
+  var searchIsActive:Bool = false
+
+  let StringActions = StringOperations()
+
   //For DataSource
   private lazy var listDataSource:PokemonListDataSource = {
 
@@ -99,6 +104,7 @@ class PokemonListControllerViewController: UIViewController {
 
 extension PokemonListControllerViewController : UITableViewDelegate{
 
+    // For Now the Navigation is realize directly throw table view segue, it was linked on Interface Builder
 }
 
 extension PokemonListControllerViewController : UIScrollViewDelegate{
@@ -106,14 +112,45 @@ extension PokemonListControllerViewController : UIScrollViewDelegate{
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     // Load more restaurants if the user is 100 points away from scrolling to the bottom.
-    let height = scrollView.frame.size.height + 100
-    let contentYoffset = scrollView.contentOffset.y
-    let distanceFromBottom = scrollView.contentSize.height - contentYoffset
-    if distanceFromBottom < height {
-      print("Load Next POkemons")
-      self.listDataSource.FetchNext()
-    }
 
+
+
+      let height = scrollView.frame.size.height + 100
+      let contentYoffset = scrollView.contentOffset.y
+      let distanceFromBottom = scrollView.contentSize.height - contentYoffset
+      if distanceFromBottom < height {
+
+        if !self.searchIsActive{
+        print("Load Next POkemons")
+        self.listDataSource.FetchNext()
+        }
+      }
+
+
+
+  }
+
+
+
+}
+
+extension PokemonListControllerViewController: UISearchBarDelegate{
+
+  func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+
+    print("Text did End")
+  }
+
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+    if searchText.isEmpty{
+        self.searchIsActive = false
+    }else{
+      self.searchIsActive = true
+    }
+    print("Text did Change to: \(searchText)")
+    print(searchText)
+    self.listDataSource.FecthDataWhenUserSearchPokemon(pokemonName: self.StringActions.TranslateStringToLowerCase(baseString:searchText))
   }
 
 }
